@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <!-- Fixed navbar -->
+   <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <!-- Left-aligned: Brand Name -->
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-6 text-start">
+          <a class="navbar-brand fs-5 fw-bolder" id="navLogo">WebDev Learn</a>
+        </div>
+        <div class="col-6 text-end">
+          <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fs-5">
+        <li class="nav-item px-3">
+          <a class="navbar-brand py-lg-0 py-md-5 fw-medium" href="" id="nav-home-btn">Home</a>
+        </li>
+        <li class="nav-item p-lg-0 py-3 ">
+          <a class="navbar-brand py-lg-0 p-md-5 fw-medium"  id="mcq-btn">Solve MCQ</a>
+        </li>
+        <li class="nav-item p-lg-0 py-3 ">
+          <a class="navbar-brand py-lg-0 p-md-5 fw-medium"  id="about-btn">About us</a>
+        </li>
+      </ul>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Hero Section -->
+<section id="welcome-page">
+
+    <section class=" text-center py-5 ">
+    <div class="container">
+      <h1 class="display-4 mb-3">Welcome to WebDev Learn</h1>
+      <p class="lead mb-4">
+        Your beginner-friendly platform to master HTML, CSS, and JavaScript with clear notes, examples, and hands-on projects.
+      </p>
+      <a  class="btn btn-primary btn-lg" id="html-btn2">Start Learning</a>
+    </div>
+  </section>
+
+  <!-- Features / Modules -->
+  <section class="container py-5" >
+    <h2 class="text-center mb-5">Explore Our Modules</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h3 class="card-title mb-3">HTML</h3>
+            <p class="card-text">Learn the building blocks of the web — structure your content with semantic tags and forms.</p>
+            <a href="#html-section" class="btn btn-outline-primary" id="html-btn">Learn HTML</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h3 class="card-title mb-3">CSS</h3>
+            <p class="card-text">Style your web pages with colors, layouts, and animations to create beautiful designs.</p>
+            <a href="#css-section" class="btn btn-outline-primary" id="css-btn">Learn CSS</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h3 class="card-title mb-3">JavaScript</h3>
+            <p class="card-text">Add interactivity and dynamic behavior to your websites using programming fundamentals.</p>
+            <a href="#js-section" class="btn btn-outline-primary" id="js-btn">Learn JavaScript</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</section>
+    
+    <div class="container py-5 my-0 my-lg-5 html-section" id="html-section">
+      <h1 class="mb-4 text-center">📘Notes on HTML</h1>
+
+      <!-- 1 -->
+      <div class="mb-4">
+        <h2>What is HTML?</h2>
+        <p>
+          HTML stands for <strong>HyperText Markup Language</strong>. It is the
+          standard markup language used to create and design web pages.
+        </p>
+        <ul>
+          <li><strong>HyperText</strong>: Links between web pages.</li>
+          <li>
+            <strong>Markup Language</strong>: Uses tags to define content.
+          </li>
+        </ul>
+      </div>
+
+      <!-- 2 -->
+      <div class="mb-4">
+        <h2>Purpose of HTML</h2>
+        <ul>
+          <li>Defines the structure of web content.</li>
+          <li>Organizes text, images, links, forms, and multimedia.</li>
+          <li>Works with CSS and JavaScript.</li>
+        </ul>
+      </div>
+
+      <!-- 3 -->
+      <div class="mb-4">
+        <h2>HTML File Structure</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <table class="table table-bordered mt-3">
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;!DOCTYPE html&gt;</td>
+              <td>Declares HTML5 document type</td>
+            </tr>
+            <tr>
+              <td>&lt;html&gt;</td>
+              <td>Root element</td>
+            </tr>
+            <tr>
+              <td>&lt;head&gt;</td>
+              <td>Metadata and links</td>
+            </tr>
+            <tr>
+              <td>&lt;title&gt;</td>
+              <td>Title in browser tab</td>
+            </tr>
+            <tr>
+              <td>&lt;body&gt;</td>
+              <td>Main visible content</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4 -->
+      <div class="mb-4">
+        <h2>Common HTML Tags</h2>
+        <h5>Text Formatting</h5>
+        <p>
+          <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>,
+          <code>&lt;p&gt;</code>, <code>&lt;br&gt;</code>,
+          <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>,
+          <code>&lt;u&gt;</code>
+        </p>
+
+        <h5>Lists</h5>
+        <p>
+          <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>,
+          <code>&lt;li&gt;</code>
+        </p>
+
+        <h5>Links & Images</h5>
+        <code>&lt;a href="url"&gt;Text&lt;/a&gt;</code><br />
+        <code>&lt;img src="image.jpg" alt="description" /&gt;</code>
+
+        <h5>Tables</h5>
+        <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header&lt;/th&gt;
+    &lt;td&gt;Data&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+        <h5>Forms</h5>
+        <pre><code>&lt;form&gt;
+  &lt;input type="text" name="username" /&gt;
+  &lt;input type="submit" /&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+
+      <!-- 5 -->
+      <div class="mb-4">
+        <h2>Attributes in HTML</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>id</td>
+              <td>Unique identifier</td>
+            </tr>
+            <tr>
+              <td>class</td>
+              <td>Class name</td>
+            </tr>
+            <tr>
+              <td>href</td>
+              <td>URL for links</td>
+            </tr>
+            <tr>
+              <td>src</td>
+              <td>Source for images</td>
+            </tr>
+            <tr>
+              <td>alt</td>
+              <td>Alternative text</td>
+            </tr>
+            <tr>
+              <td>style</td>
+              <td>Inline styles</td>
+            </tr>
+            <tr>
+              <td>title</td>
+              <td>Tooltip text</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 6 -->
+      <div class="mb-4">
+        <h2>Semantic HTML</h2>
+        <p>Tags that describe their meaning clearly:</p>
+        <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
+        <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>,
+        <code>&lt;section&gt;</code>, <code>&lt;main&gt;</code>
+        <p>Helps with accessibility, SEO, and readability.</p>
+      </div>
+
+      <!-- 7 -->
+      <div class="mb-4">
+        <h2>7. HTML5 Features</h2>
+        <ul>
+          <li>
+            New semantic elements: <code>&lt;main&gt;</code>,
+            <code>&lt;section&gt;</code>
+          </li>
+          <li>
+            Multimedia support: <code>&lt;audio&gt;</code>,
+            <code>&lt;video&gt;</code>
+          </li>
+          <li>Advanced form input types</li>
+          <li>
+            Graphics with <code>&lt;canvas&gt;</code> and
+            <code>&lt;svg&gt;</code>
+          </li>
+          <li>Local storage capabilities</li>
+        </ul>
+      </div>
+
+      <!-- 8 -->
+      <div class="mb-4">
+        <h2>Best Practices</h2>
+        <ul>
+          <li>Use semantic tags</li>
+          <li>Indent and comment code</li>
+          <li>Use lowercase for tags and attributes</li>
+          <li>Separate CSS and JS from HTML</li>
+          <li>
+            Validate HTML using
+            <a href="https://validator.w3.org/" target="_blank"
+              >W3C Validator</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- 9 -->
+      <div class="mb-4">
+        <h2>HTML with CSS and JavaScript</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="alert('Hello!')"&gt;Click Me&lt;/button&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+
+      <!-- 10 -->
+      <div class="mb-5">
+        <h2>Useful Resources</h2>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+              >MDN Web Docs - HTML</a
+            >
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/html/" target="_blank"
+              >W3Schools HTML Tutorial</a
+            >
+          </li>
+          <li>
+            <a href="https://www.freecodecamp.org/" target="_blank"
+              >freeCodeCamp</a
+            >
+          </li>
+        </ul>
+        <div class="htmlPage-next-btn text-lg-end text-center">
+          <a href="#css-section" class="btn btn-primary btn-lg mt-4" id="html-next-btn">Next</a>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5 my-0 my-lg-5 css-section" id="css-section">
+      <h1 class="mb-4 text-center">🎨Notes on CSS</h1>
+
+      <!-- 1 -->
+      <div class="mb-4" >
+        <h2>What is CSS?</h2>
+        <p>
+          Cascading Style Sheets (CSS) is a stylesheet language used to describe
+          the presentation of a document written in HTML or XML (including XML
+          dialects such as SVG, MathML or XHTML). CSS describes how elements
+          should be rendered on screen, on paper, in speech, or on other media.
+        </p>
+      </div>
+
+      <!-- 2 -->
+      <div class="mb-4">
+        <h2>Purpose of CSS</h2>
+        <ul>
+          <li>Controls website look and feel.</li>
+          <li>Separates content (HTML) from design (CSS).</li>
+          <li>Improves reusability, maintainability, and consistency.</li>
+        </ul>
+      </div>
+
+      <!-- 3 -->
+      <div class="mb-4">
+        <h2>Types of CSS</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Inline</td>
+              <td>Within HTML tags</td>
+              <td><code>&lt;p style="color:red;"&gt;Text&lt;/p&gt;</code></td>
+            </tr>
+            <tr>
+              <td>Internal</td>
+              <td>Within a &lt;style&gt; tag in head</td>
+              <td><code>&lt;style&gt;p { color:red; }&lt;/style&gt;</code></td>
+            </tr>
+            <tr>
+              <td>External</td>
+              <td>Separate .css file</td>
+              <td>
+                <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4 -->
+      <div class="mb-4">
+        <h2>CSS Syntax</h2>
+        <pre><code>selector {
+  property: value;
+}</code></pre>
+        <p><strong>Example:</strong></p>
+        <pre><code>h1 {
+  color: blue;
+  font-size: 24px;
+}</code></pre>
+      </div>
+
+      <!-- 5 -->
+      <div class="mb-4">
+        <h2>CSS Selectors</h2>
+        <ul>
+          <li><code>*</code> (Universal)</li>
+          <li><code>p</code> (Element)</li>
+          <li><code>.class</code> (Class)</li>
+          <li><code>#id</code> (ID)</li>
+          <li><code>div p</code> (Descendant)</li>
+          <li><code>a:hover</code> (Pseudo-class)</li>
+        </ul>
+      </div>
+
+      <!-- 6 -->
+      <div class="mb-4">
+        <h2>Colors in CSS</h2>
+        <ul>
+          <li><strong>Named:</strong> red, blue</li>
+          <li><strong>Hex:</strong> #ff0000</li>
+          <li><strong>RGB:</strong> rgb(255, 0, 0)</li>
+          <li><strong>HSL:</strong> hsl(0, 100%, 50%)</li>
+        </ul>
+      </div>
+
+      <!-- 7 -->
+      <div class="mb-4">
+        <h2>CSS Units</h2>
+        <ul>
+          <li><strong>Absolute:</strong> px, pt, cm</li>
+          <li><strong>Relative:</strong> em, rem, %, vw, vh</li>
+        </ul>
+      </div>
+
+      <!-- 8 -->
+      <div class="mb-4">
+        <h2>Box Model</h2>
+        <p>The CSS box model includes:</p>
+        <ul>
+          <li><strong>Content</strong></li>
+          <li><strong>Padding</strong></li>
+          <li><strong>Border</strong></li>
+          <li><strong>Margin</strong></li>
+        </ul>
+        <img
+          src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png"
+          class="img-fluid"
+          alt="Box model illustration"
+        />
+      </div>
+
+      <!-- 9 -->
+      <div class="mb-4">
+        <h2>Common CSS Properties</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>color</td>
+              <td>Text color</td>
+            </tr>
+            <tr>
+              <td>background-color</td>
+              <td>Element background</td>
+            </tr>
+            <tr>
+              <td>font-size</td>
+              <td>Text size</td>
+            </tr>
+            <tr>
+              <td>margin / padding</td>
+              <td>Space around and inside</td>
+            </tr>
+            <tr>
+              <td>border</td>
+              <td>Element border</td>
+            </tr>
+            <tr>
+              <td>width / height</td>
+              <td>Size control</td>
+            </tr>
+            <tr>
+              <td>display</td>
+              <td>Layout behavior (block, flex, grid)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 10 -->
+      <div class="mb-4">
+        <h2>Positioning</h2>
+        <ul>
+          <li><strong>static</strong>: Default</li>
+          <li><strong>relative</strong>: Relative to normal position</li>
+          <li>
+            <strong>absolute</strong>: Positioned relative to nearest ancestor
+          </li>
+          <li><strong>fixed</strong>: Fixed in viewport</li>
+          <li><strong>sticky</strong>: Sticks during scroll</li>
+        </ul>
+      </div>
+
+      <!-- 11 -->
+      <div class="mb-4">
+        <h2>Flexbox</h2>
+        <pre><code>.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}</code></pre>
+        <p>
+          <strong>Main properties:</strong> flex-direction, justify-content,
+          align-items, flex-wrap
+        </p>
+      </div>
+
+      <!-- 12 -->
+      <div class="mb-4">
+        <h2>CSS Grid</h2>
+        <pre><code>.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}</code></pre>
+        <p>
+          <strong>Main properties:</strong> grid-template-columns,
+          grid-template-rows, grid-gap, grid-area
+        </p>
+      </div>
+
+      <!-- 13 -->
+      <div class="mb-4">
+        <h2>Media Queries (Responsive Design)</h2>
+        <pre><code>@media (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}</code></pre>
+        <p>Used to create layouts that adapt to screen sizes.</p>
+      </div>
+
+      <!-- 14 -->
+      <div class="mb-4">
+        <h2>Cascading and Specificity</h2>
+        <ul>
+          <li>Last rule wins in conflicts.</li>
+          <li>
+            <strong>Specificity hierarchy:</strong> Inline &gt; ID &gt; Class
+            &gt; Element
+          </li>
+        </ul>
+      </div>
+
+      <!-- 15 -->
+      <div class="mb-4">
+        <h2>Best Practices</h2>
+        <ul>
+          <li>Use external stylesheets.</li>
+          <li>Use semantic and meaningful class names.</li>
+          <li>Organize code logically: reset, layout, components.</li>
+          <li>Avoid inline styles unless necessary.</li>
+          <li>Use developer tools and CSS validators.</li>
+        </ul>
+      </div>
+
+      <!-- 16 -->
+      <div class="mb-5">
+        <h2>Useful Resources</h2>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+              >MDN Web Docs - CSS</a
+            >
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/css/" target="_blank"
+              >W3Schools CSS Tutorial</a
+            >
+          </li>
+          <li>
+            <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
+          </li>
+          <li>
+            <a href="https://flexboxfroggy.com/" target="_blank"
+              >Flexbox Froggy</a
+            >
+          </li>
+          <li>
+            <a href="https://cssgridgarden.com/" target="_blank">Grid Garden</a>
+          </li>
+        </ul>
+        <div class="cssPage-next-btn text-lg-end text-center">
+          <a href="#js-section" class="btn btn-primary btn-lg mt-4" id="css-next-btn">Next</a>
+        </div>
+        <div class="cssPage-prev-btn text-lg-start text-center">
+          <a href="#html-section" class="btn btn-primary btn-lg mt-4" id="css-prev-btn">&lt;Prev</a>
+        </div>
+      </div>
+    </div>
+
+  <div class="container py-5 my-0 my-lg-5 js-section" id="js-section">
+    <h1 class="mb-4 text-center">📘 JavaScript - Notes</h1>
+
+    <!-- 1 -->
+    <div class="mb-4">
+      <h2>What is JavaScript?</h2>
+      <p>JavaScript is a high-level, interpreted programming language used to make web pages interactive. It runs in the browser and is a core technology alongside HTML and CSS.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="mb-4">
+      <h2>Why Use JavaScript?</h2>
+      <ul>
+        <li>To build dynamic and interactive web pages</li>
+        <li>To handle events (clicks, inputs, etc.)</li>
+        <li>To update HTML/CSS content on the fly</li>
+        <li>To validate forms before submission</li>
+        <li>To fetch data using APIs (AJAX, fetch, etc.)</li>
+      </ul>
+    </div>
+
+    <!-- 3 -->
+    <div class="mb-4">
+      <h2>Where to Use JavaScript?</h2>
+      <ul>
+        <li><strong>Inline:</strong> <code>&lt;button onclick="alert('Hi!')"&gt;</code></li>
+        <li><strong>Internal:</strong> Inside <code>&lt;script&gt;</code> tags</li>
+        <li><strong>External:</strong> Separate <code>.js</code> file linked using <code>&lt;script src="script.js"&gt;</code></li>
+      </ul>
+    </div>
+
+    <!-- 4 -->
+    <div class="mb-4">
+      <h2>Basic Syntax</h2>
+      <pre><code>// Single-line comment
+/* Multi-line comment */
+let name = "John";
+console.log("Hello " + name);</code></pre>
+    </div>
+
+    <!-- 5 -->
+    <div class="mb-4">
+      <h2>Variables</h2>
+      <ul>
+        <li><code>var</code> – old, function-scoped</li>
+        <li><code>let</code> – block-scoped</li>
+        <li><code>const</code> – block-scoped, cannot be reassigned</li>
+      </ul>
+      <pre><code>let age = 25;
+const name = "Alice";</code></pre>
+    </div>
+
+    <!-- 6 -->
+    <div class="mb-4">
+      <h2>Data Types</h2>
+      <ul>
+        <li>String, Number, Boolean</li>
+        <li>Object, Array, Function</li>
+        <li>Undefined, Null, Symbol, BigInt</li>
+      </ul>
+      <pre><code>let isOnline = true;
+let user = { name: "Alex", age: 30 };
+let fruits = ["apple", "banana"];</code></pre>
+    </div>
+
+    <!-- 7 -->
+    <div class="mb-4">
+      <h2>Operators</h2>
+      <ul>
+        <li>Arithmetic: <code>+ - * / %</code></li>
+        <li>Assignment: <code>= += -=</code></li>
+        <li>Comparison: <code>== === != !== &gt; &lt;</code></li>
+        <li>Logical: <code>&& || !</code></li>
+      </ul>
+      <pre><code>let x = 5;
+let y = 10;
+console.log(x + y);</code></pre>
+    </div>
+
+    <!-- 8 -->
+    <div class="mb-4">
+      <h2>Control Structures</h2>
+      <h5>Conditional:</h5>
+      <pre><code>if (x &gt; 10) {
+  console.log("x is large");
+} else {
+  console.log("x is small");
+}</code></pre>
+
+      <h5>Switch:</h5>
+      <pre><code>switch (day) {
+  case "Monday":
+    alert("Start of week");
+    break;
+  default:
+    alert("Unknown day");
+}</code></pre>
+
+      <h5>Loops:</h5>
+      <pre><code>for (let i = 0; i &lt; 5; i++) {
+  console.log(i);
+}
+
+while (x &gt; 0) {
+  x--;
+}</code></pre>
+    </div>
+
+    <!-- 9 -->
+    <div class="mb-4">
+      <h2>Functions</h2>
+      <pre><code>function greet(name) {
+  return "Hello " + name;
+}
+
+const sum = (a, b) =&gt; a + b;</code></pre>
+    </div>
+
+    <!-- 10 -->
+    <div class="mb-4">
+      <h2>Arrays and Objects</h2>
+      <pre><code>let colors = ["red", "green", "blue"];
+colors.push("yellow");
+
+let person = {
+  name: "John",
+  age: 28,
+  greet: function() {
+    return "Hi, " + this.name;
+  }
+};</code></pre>
+    </div>
+
+    <!-- 11 -->
+    <div class="mb-4">
+      <h2>DOM Manipulation</h2>
+      <pre><code>document.getElementById("demo").innerHTML = "Hello!";
+document.querySelector(".box").style.color = "red";</code></pre>
+      <p>Create an element and append:</p>
+      <pre><code>let p = document.createElement("p");
+p.textContent = "New paragraph";
+document.body.appendChild(p);</code></pre>
+    </div>
+
+    <!-- 12 -->
+    <div class="mb-4">
+      <h2>Events</h2>
+      <pre><code>document.getElementById("btn").addEventListener("click", function() {
+  alert("Button clicked!");
+});</code></pre>
+    </div>
+
+    <!-- 13 -->
+    <div class="mb-4">
+      <h2>Asynchronous JS</h2>
+      <h5>Callback Example:</h5>
+      <pre><code>function loadData(callback) {
+  setTimeout(() =&gt; {
+    callback("Data loaded");
+  }, 1000);
+}</code></pre>
+
+      <h5>Promise Example:</h5>
+      <pre><code>let promise = new Promise((resolve, reject) =&gt; {
+  resolve("Success");
+});
+
+promise.then(data =&gt; console.log(data));</code></pre>
+
+      <h5>Async/Await:</h5>
+      <pre><code>async function fetchData() {
+  let res = await fetch("https://api.example.com/data");
+  let data = await res.json();
+  console.log(data);
+}</code></pre>
+    </div>
+
+    <!-- 14 -->
+    <div class="mb-4">
+      <h2>ES6+ Features</h2>
+      <ul>
+        <li><code>let</code> and <code>const</code></li>
+        <li>Arrow functions: <code>() =&gt; {}</code></li>
+        <li>Template literals: <code>`Hello ${name}`</code></li>
+        <li>Destructuring: <code>let { name } = person;</code></li>
+        <li>Spread/rest: <code>[...arr]</code>, <code>function(...args)</code></li>
+        <li>Modules: <code>export/import</code></li>
+      </ul>
+    </div>
+
+    <!-- 15 -->
+    <div class="mb-4">
+      <h2>Best Practices</h2>
+      <ul>
+        <li>Use <code>let</code> and <code>const</code> instead of <code>var</code></li>
+        <li>Keep code modular and DRY (Don’t Repeat Yourself)</li>
+        <li>Use meaningful variable/function names</li>
+        <li>Validate user inputs and handle errors</li>
+        <li>Comment where necessary</li>
+      </ul>
+    </div>
+
+    <!-- 16 -->
+    <div class="mb-5">
+      <h2>Useful Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN JavaScript Docs</a></li>
+        <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript</a></li>
+        <li><a href="https://javascript.info/" target="_blank">JavaScript Info</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp JavaScript Course</a></li>
+      </ul>
+        <div class="jsPage-prev-btn text-lg-start text-center">
+          <a href="#css-section" class="btn btn-primary btn-lg mt-4" id="js-prev-btn">&lt;Prev</a>
+        </div>
+    </div>
+  </div>
+  
+  <div class="container py-5 description-section" id="description-section">
+    <h1 class="text-center mb-4">🌐 Website Description – <span class="text-primary">WebDev Learn by Ronodip Sill</span></h1>
+
+    <div class="mb-5">
+      <h3>About the Website:</h3>
+      <p>Welcome to <strong>WebDev Learn</strong>, a beginner-friendly learning platform created to help aspiring developers understand the core concepts of <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.</p>
+      <p>This website is designed as a structured and interactive space to learn frontend web development — from the very basics to essential best practices — using clear explanations, real-world examples, and responsive layouts powered by <strong>Bootstrap</strong>.</p>
+      <p>Whether you are a complete beginner or looking to revise foundational skills, this site provides easy-to-follow notes, sample code, and practical insights to guide your journey.</p>
+    </div>
+
+    <div class="mb-5">
+      <h3>About the Creator:</h3>
+      <p>👨‍💻 <strong>Ronodip Sill</strong><br />
+      <em>Self-Taught Web Developer</em></p>
+      <p>Hi! I’m Ronodip Sill, a passionate, self-taught web developer with a strong interest in frontend development and UI/UX design. Having spent years learning through online resources and hands-on projects, I understand the challenges beginners face — and that’s exactly why I built this site.</p>
+      <p>My goal is to make web development <strong>easy, accessible, and enjoyable</strong> for everyone. I believe learning by doing is the best way, so this platform emphasizes clear notes, visual structure, and real code examples.</p>
+    </div>
+
+    <div class="mb-4">
+      <h3>What You’ll Find Here:</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">📖 <strong>Detailed Notes</strong> on HTML, CSS, and JavaScript</li>
+        <li class="list-group-item">🎯 <strong>Practical Code Examples</strong></li>
+        <li class="list-group-item">🧠 <strong>Beginner-Friendly Explanations</strong></li>
+        <li class="list-group-item">💡 <strong>Modern Best Practices</strong></li>
+        <li class="list-group-item">⏱️ <strong>Important MCQs</strong></li>
+      </ul>
+    </div>
+
+    <div class="text-center mt-5">
+      <h4>Let’s Learn. Build. Grow. Together. 🚀</h4>
+      <p>Feel free to reach out or contribute as we grow this learning journey!</p>
+    </div>
+  </div>
+
+  <!-- Connect With Me Section -->
+<div class="container my-5 mt-5 pt-5" id="contact-section ">
+  <h3 class="text-center mb-4">📬 Connect with Me</h3>
+  <div class="row justify-content-center text-center g-4">
+
+    <!-- GitHub -->
+    <div class="col-6 col-md-3">
+      <a href="https://github.com/Roni-js" target="_blank" class="text-decoration-none text-dark">
+        <div class="border p-3 rounded shadow-sm h-100">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="25" />
+          <p class="mt-2 mb-0">GitHub</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="col-6 col-md-3">
+      <a href="https://www.linkedin.com/in/ronodip-sill-51b685196/" target="_blank" class="text-decoration-none text-dark">
+        <div class="border p-3 rounded shadow-sm h-100">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="25" />
+          <p class="mt-2 mb-0">LinkedIn</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Email -->
+    <div class="col-6 col-md-3">
+      <a href="mailto:your-ronodipsill26@gmail.com" class="text-decoration-none text-dark">
+        <div class="border p-3 rounded shadow-sm h-100">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="25" />
+          <p class="mt-2 mb-0">Email</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Instagram -->
+    <div class="col-6 col-md-3">
+      <a href="https://www.instagram.com/ig_ronodip/" target="_blank" class="text-decoration-none text-dark">
+        <div class="border p-3 rounded shadow-sm h-100">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="25" />
+          <p class="mt-2 mb-0">Instagram</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+ <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3 bottom-0">
+  <div class="container">
+    <small>&copy; 2025 Ronodip Sill - WebDev Learn. All rights reserved.</small>
+  </div>
+</footer>
+</body>
+<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</html>
