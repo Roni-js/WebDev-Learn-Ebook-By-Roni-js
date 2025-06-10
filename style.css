@@ -58,3 +58,13 @@ footer{
     padding: 20px 0;
     margin-top: 260px;
 }
+.Quiz-btns{
+    background-color: #000;
+    padding: 20px !important;
+}
+.quiz-card {
+      max-width: 700px;
+}
+ra{
+    cursor: pointer ;
+}

@@ -11,7 +11,6 @@ const cssNxtBtn = document.getElementById('css-next-btn')
 const htmlPrevBtn = document.getElementById('html-prev-btn')
 const cssPrevBtn = document.getElementById('css-prev-btn')
 const jsPrevBtn = document.getElementById('js-prev-btn')
-const mcqBtn = document.getElementById('mcq-btn')
 
 // Sections:
 
@@ -80,6 +79,27 @@ window.addEventListener('mouseleave', (e) => {
         htmlSec.style.display = "block"
         console.log('css prev btn clicked');
     })
-    mcqBtn.addEventListener('click', () => {
-        alert('This Feature is Coming Soon!')
+
+
+    // Quiz Logic:
+
+    const quizNo = document.getElementById('quiz-no')
+    const quizNextBtn = document.getElementById('quizNextBtn')
+    const quizPrevBtn = document.getElementById('quizPrevBtn')
+
+    quizNextBtn.addEventListener('click', () => {
+let NoOfQuiz=1;
+NoOfQuiz++
+console.log(NoOfQuiz);
     })
+    quizNextBtn.addEventListener('click', () => {})
+
+    
+
+
+
+
+
+
+
+    
